@@ -1,6 +1,6 @@
 # Catalog App - Flutter
 
-Um novo projeto em Flutter/Darte
+Um novo projeto em Flutter/Dart
 
 ## Ponto de Partida
 
