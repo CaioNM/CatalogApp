@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_catalog/pages/home.dart';
+import 'package:flutter_catalog/pages/login.dart';
+import 'package:flutter_catalog/pages/utils/routes.dart';
+import 'package:flutter_catalog/widgets/themes.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      themeMode: ThemeMode.light,
+      theme: MyTheme.lightTheme(context),
+      debugShowCheckedModeBanner: false,
+      darkTheme: MyTheme.darkTheme(context),
+      initialRoute: MyRoutes.homeRoute,
+      routes: {
+        "/": (context) => LoginPage(),
+        MyRoutes.homeRoute: (context) => HomePage(),
+        MyRoutes.loginRoute: (context) => LoginPage(),
+      },
+    );
+  }
+}

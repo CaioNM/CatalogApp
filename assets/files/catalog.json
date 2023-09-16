@@ -1,0 +1,68 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "iPhone 13 Pro Max",
+            "desc": "Apple's 13th generation iPhone",
+            "price": 999,
+            "color": "#33505a",
+            "image": "https://planoscelular.claro.com.br/medias/18079-0-zero-300Wx300H-productCard?context=bWFzdGVyfGltYWdlc3w1NDcxNnxpbWFnZS9wbmd8YUdReUwyZzJNaTg1TmpreU56SXhNREl3T1RVNEx6RTRNRGM1WHpCZmVtVnliMTh6TURCWGVETXdNRWhmY0hKdlpIVmpkRU5oY21RfDM0NTQzZWUyZTEyMDgzNzZkNmQ4NzNlNDcyZmRiZWQ4YTAzOWZjN2I5N2M3Zjg1Y2FkMGRhNTdlNDIyMjJjY2I"
+        },
+        {
+            "id": 2,
+            "name": "Pixel 5",
+            "desc": "Google's 5th generation Pixel",
+            "price": 699,
+            "color": "#00ac51",
+            "image": "https://t.ctcdn.com.br/bUjoEV4aiwsnM1S__I8guFOnkBw=/fit-in/400x400/filters:fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i414100.png"
+        },
+        {
+            "id": 3,
+            "name": "Macbook Air",
+            "desc": "Apple Macbook Air with apple silicon",
+            "price": 1099,
+            "color": "#e0bfae",
+            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=1078&hei=730&fmt=png-alpha&.v=1653084303665"
+        },
+        {
+            "id": 4,
+            "name": "PlayStation 5",
+            "desc": "Sony's 5th generation PlayStation",
+            "price": "500",
+            "color": "#544ee4",
+            "image": "https://gmedia.playstation.com/is/image/SIEPDC/console-right_@1x?fmt=png-alpha&scl=1"
+        },
+        {
+            "id": 5,
+            "name": "Airpods Pro",
+            "desc": "Apple's Airpods",
+            "price": "200",
+            "color": "#e3e4e9",
+            "image": "https://importswb.com.br/wp-content/uploads/2022/08/96.png"
+        },
+        {
+            "id": 6,
+            "name": "iPad Pro",
+            "desc": "Apple's iPad Pro - 2020 edition",
+            "price": "799",
+            "color": "#f73984",
+            "image": "https://t.ctcdn.com.br/euOV7IzWFOU5-5yDaO6qphr1Kbo=/fit-in/400x400/filters:fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i413837.png"
+        },
+        {
+            "id": 7,
+            "name": "Galaxy S21 Ultra",
+            "desc": "Samsung Galaxy S21 Ultra - 2021 edition",
+            "price": "899",
+            "color": "#1c1c1c",
+            "image": "https://novomundo.vteximg.com.br/arquivos/ids/3196049-1000-1000/smartphone-samsung-galaxy-s21-5g-tela-infinita-67-128-gb-cmera-tripla-traseira-64mp-leitor-digital-na-tela-preto-sm-g996-smartphone-samsung-galaxy-s21-5g-tela-infinita-67-0.jpg?v=637485720329700000"
+        },
+        {
+            "id": 8,
+            "name": "Samsung Galaxy S23 Ultra",
+            "desc": "Samsung Galaxy S23 Ultra - 2023 edition",
+            "price": "990",
+            "color": "#7c95eb",
+            "image": "https://imgs.casasbahia.com.br/1555261134/1xg.jpg?imwidth=500"
+        }
+    ]
+}
