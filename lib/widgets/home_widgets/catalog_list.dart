@@ -4,6 +4,7 @@ import 'package:flutter_catalog/pages/home_detail_page.dart';
 import 'package:flutter_catalog/widgets/home_widgets/catalog_image.dart';
 import 'package:flutter_catalog/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
+import 'package:flutter_flavorizr/flutter_flavorizr.dart';
 
 class CatalogList extends StatelessWidget {
   @override
@@ -46,23 +47,28 @@ class CatalogItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                catalog.name.text.lg.color(MyTheme.darkBluishColor).bold.make(),
+                catalog.name.text.lg
+                    .color(context.theme.colorScheme.primary)
+                    .bold
+                    .make(),
                 catalog.desc.text.textStyle(context.captionStyle).make(),
                 10.heightBox,
                 ButtonBar(
                   alignment: MainAxisAlignment.spaceBetween,
                   buttonPadding: EdgeInsets.zero,
                   children: [
-                    "US\$${catalog.price}".text.bold.xl.make(),
+                    "\$${catalog.price}".text.bold.xl.make(),
                     ElevatedButton(
                         onPressed: () {},
                         style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(
-                                MyTheme.darkBluishColor),
-                            shape: MaterialStateProperty.all(
-                              StadiumBorder(),
-                            )),
-                        child: "Buy".text.make()),
+                          backgroundColor: MaterialStateProperty.all(
+                            context.theme.highlightColor,
+                          ),
+                          shape: MaterialStateProperty.all(
+                            StadiumBorder(),
+                          ),
+                        ),
+                        child: "Add to cart".text.white.make()),
                   ],
                 ).pOnly(right: 8.0)
               ],
@@ -70,6 +76,6 @@ class CatalogItem extends StatelessWidget {
           )
         ],
       ),
-    ).white.rounded.square(150).make().py16();
+    ).color(context.cardColor).rounded.square(150).make().py16();
   }
 }
