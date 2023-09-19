@@ -1,13 +1,18 @@
 import 'dart:convert';
 
 class CatalogModel {
+  static final catModel = CatalogModel._internal();
+  CatalogModel._internal();
+  factory CatalogModel() => catModel;
+
   static List<Item> items = [];
 
   //Recupera o item pelo ID
-  Item getById(int id) => items.firstWhere((element) => element.id == id, orElse: null);
+  Item getById(int id) =>
+      items.firstWhere((element) => element.id == id, orElse: null);
 
   //Recupera Item pela sua posição
-  static Item getByPosition(int pos) => items[pos];
+  Item getByPosition(int pos) => items[pos];
 }
 
 class Item {
@@ -30,7 +35,7 @@ class Item {
     required int id,
     required String name,
     required String desc,
-    required num price,
+    required dynamic price,
     required String color,
     required String image,
   }) {
