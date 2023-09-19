@@ -35,6 +35,7 @@ class MyTheme {
         secondary: darkBluishColor,
       ),
       appBarTheme: AppBarTheme(
+        centerTitle: true,
         color: Colors.black,
         elevation: 0.0,
         iconTheme: IconThemeData(color: Colors.white),
