@@ -6,9 +6,11 @@ class MyStore extends VxStore {
   CatalogModel catalog;
   CartModel cart;
 
-  MyStore() {
-    catalog = CatalogModel();
-    cart = CartModel();
+  MyStore()
+      : catalog = CatalogModel(),
+        cart = CartModel() {
     cart.catalog = catalog;
   }
+
+  set items(List<Item> items) {}
 }

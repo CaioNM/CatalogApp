@@ -19,13 +19,15 @@ class Item {
   final String color;
   final String image;
 
+
   Item(
       {required this.id,
       required this.name,
       required this.desc,
       required this.price,
       required this.color,
-      required this.image});
+      required this.image,
+    });
 
   Item copyWith({
     required int id,
@@ -33,6 +35,7 @@ class Item {
     required String desc,
     required dynamic price,
     required String color,
+    int quantity = 1,
     required String image,
   }) {
     return Item(
@@ -77,16 +80,16 @@ class Item {
   }
 
   @override
-  bool operator ==(Object other) {
-    if (identical(this, other)) return true;
+  bool operator ==(Object o) {
+    if (identical(this, o)) return true;
 
-    return other is Item &&
-        other.id == id &&
-        other.name == name &&
-        other.desc == desc &&
-        other.price == price &&
-        other.color == color &&
-        other.image == image;
+    return o is Item &&
+        o.id == id &&
+        o.name == name &&
+        o.desc == desc &&
+        o.price == price &&
+        o.color == color &&
+        o.image == image;
   }
 
   @override

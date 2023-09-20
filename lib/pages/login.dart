@@ -83,8 +83,8 @@ class _LoginPageState extends State<LoginPage> {
                           if (value!.isEmpty) {
                             return "Password cannot be empty";
                           }
-                          if (value.length < 4) {
-                            return "Password must have 4 or more digits";
+                          if (value.length < 3) {
+                            return "Password must have 3 or more digits";
                           }
                           return null;
                         },
