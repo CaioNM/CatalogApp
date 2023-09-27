@@ -36,7 +36,7 @@ class _CartTotal extends StatelessWidget {
           VxBuilder(
             mutations: {RemoveMutation},
             builder: (context, _, __) {
-              return "\$${_cart.totalPrice}"
+              return "R\$${_cart.totalPrice},00"
                   .text
                   .xl5
                   .color(context.theme.colorScheme.primary)
@@ -47,13 +47,13 @@ class _CartTotal extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                content: "Buying not supported yet.".text.make(),
+                content: "Não é possível completar sua compra".text.make(),
               ));
             },
             style: ButtonStyle(
                 backgroundColor:
                     MaterialStateProperty.all(context.theme.highlightColor)),
-            child: "Buy".text.white.make(),
+            child: "Comprar".text.white.make(),
           ).w32(context)
         ],
       ),
@@ -67,7 +67,7 @@ class _CartList extends StatelessWidget {
     VxState.watch(context, on: [RemoveMutation]);
     final CartModel _cart = (VxState.store as MyStore).cart;
     return _cart.items.isEmpty
-        ? "Nothing to show".text.xl3.makeCentered()
+        ? "Carrinho vazio ".text.xl3.makeCentered()
         : ListView.builder(
             itemCount: _cart.items?.length,
             itemBuilder: (context, index) => ListTile(

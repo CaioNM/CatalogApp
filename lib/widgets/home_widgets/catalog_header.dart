@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_catalog/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class CatalogHeader extends StatelessWidget {
@@ -14,7 +13,7 @@ class CatalogHeader extends StatelessWidget {
             .bold
             .color(context.theme.colorScheme.primary)
             .make(),
-        "Trending products".text.xl2.make(),
+        "Produtos em alta!".text.xl2.make(),
       ],
     );
   }

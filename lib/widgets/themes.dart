@@ -16,7 +16,7 @@ class MyTheme {
       appBarTheme: AppBarTheme(
         color: Colors.white,
         elevation: 0.0,
-        iconTheme: IconThemeData(color: Colors.white),
+        iconTheme: IconThemeData(color: Colors.black),
         titleTextStyle: TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.bold,

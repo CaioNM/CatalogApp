@@ -43,7 +43,8 @@ class _LoginPageState extends State<LoginPage> {
                 height: 20.0,
               ),
               Text(
-                "Welcome $name",
+                "Bem-Vindo(a) $name",
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
@@ -59,12 +60,12 @@ class _LoginPageState extends State<LoginPage> {
                     children: [
                       TextFormField(
                         decoration: InputDecoration(
-                          hintText: "Enter your username",
+                          hintText: "Insira seu Username",
                           labelText: "Username",
                         ),
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return "Username cannot be empty";
+                            return "Username não pode estar vazio";
                           }
                           return null;
                         },
@@ -76,15 +77,15 @@ class _LoginPageState extends State<LoginPage> {
                       TextFormField(
                         obscureText: true,
                         decoration: InputDecoration(
-                          hintText: "Enter your password",
-                          labelText: "Password",
+                          hintText: "Insira sua senha",
+                          labelText: "Senha",
                         ),
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return "Password cannot be empty";
+                            return "Senha não pode estar vazia";
                           }
                           if (value.length < 3) {
-                            return "Password must have 3 or more digits";
+                            return "Senha deve ter 3 ou mais digitos";
                           }
                           return null;
                         },
